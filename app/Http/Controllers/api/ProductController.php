@@ -53,8 +53,8 @@ class ProductController extends Controller
     }
 
 
-     public function show(){
-
+     public function show(Product $product){
+        return new ProductResource($product);
     }
 
       public function update(){
